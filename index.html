@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section section-home">
+    <div class="home-content">
+      <div class="profile-image-wrapper">
+        <img 
+          src="https://api.dicebear.com/7.x/avataaars/svg?seed=portfolio" 
+          alt="Profile picture" 
+          class="profile-image"
+          width="220"
+          height="220"
+        >
+      </div>
+      <h1 class="home-name">Ogwang Andrew</h1>
+      <p class="home-tagline">Web Developer & Creative Problem Solver</p>
+      <p class="home-intro">
+        Welcome to my portfolio. I build clean, user-focused digital experiences 
+        and enjoy turning ideas into reality through code and design.
+      </p>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Academic Background</h3>
+          <p>
+            I am currently pursuing my studies in Computer Science. 
+            My coursework includes digital marketing, deep learning, web development, 
+            and software software construction. I am passionate about continuous learning and 
+            applying theory to real-world projects.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Interests</h3>
+          <p>
+            I am interested in full-stack development, UI/UX design, and open-source 
+            contributions. Outside of tech, I enjoy reading, video editing, and exploring 
+            new tools and frameworks that make development more enjoyable such as Webflow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder project-1">01</div>
+          </div>
+          <div class="project-content">
+            <h3>Project One</h3>
+            <p>
+              A mobile application built with Flutter, Riverpod and Supabase. Features include 
+              responsive design, form validation, and a clean user interface. This project 
+              demonstrates core front-end skills and attention to detail.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>Riverpod</span>
+              <span>Supabase</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder project-2">02</div>
+          </div>
+          <div class="project-content">
+            <h3>Project Two</h3>
+            <p>
+              A personal project for transporting agricultural goods from one place to another showing data handling, API integration and 
+              and responsive design. Built to practice web development and maintainable code.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">I’d love to hear from you. Reach out via email or connect on socials.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span>andrewog1121@gmail.com</span>
+        </a>
+        <a href="https://github.com/AndrewO13" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">⌘</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/andrew-ogwang-9891a5395" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon" aria-hidden="true">in</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <footer class="footer">
+        <p>© <span id="year"></span> Ogwang Andrew. Built with HTML, CSS & JavaScript.</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
